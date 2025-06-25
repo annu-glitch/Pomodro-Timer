@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="taskTitle">🎯 Task</h1>
+    <div id="timerSection" style="display: none;">
+      <h2 id="countdown">00:00</h2>
+      <button onclick="startCountdown()">Start</button>
+      <button onclick="resetCountdown()">Reset</button>
+      <button onclick="goBack()">Back</button>
+    </div>
+    <h3>Today's Tasks</h3>
+    <ul id="todayTasksList"></ul>
+  </div>
+  <audio id="alarmSound" src="alarm.wav" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
